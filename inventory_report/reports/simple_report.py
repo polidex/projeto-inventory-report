@@ -1,9 +1,10 @@
 from datetime import datetime
+from typing import List
 
 
 class SimpleReport:
     @staticmethod
-    def generate(products):
+    def generate(products: List[dict]) -> str:
         data_de_fabricacao = min([p['data_de_fabricacao'] for p in products])
         data_atual = datetime.now().date()
         data_de_validade = min([p['data_de_validade'] for p in products
