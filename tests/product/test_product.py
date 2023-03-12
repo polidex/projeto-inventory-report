@@ -18,4 +18,4 @@ def test_cria_produto():
     assert productMock.data_de_fabricacao == '2022-04-04'
     assert productMock.data_de_validade == '2023-02-09'
     assert productMock.numero_de_serie == 'FR48'
-    assert productMock.instrucoes_de_armazenamento == 'Conservar em local fresco'
+    assert productMock.instrucoes_de_armazenamento == 'Local fresco'
